@@ -36,4 +36,10 @@ function askQuestion() {
     while (choicesEl.hasChildNodes()) {
         choicesEl.removeChild(choicesEl.lastChild);
     }
+
+    for (var i = 0; currentQuestion.choices.length; i++) {
+        var buttonChoice = document.createElement("button");
+        buttonChoice.textContent = currentQuestion.choices[i];
+        choicesEl.appendChild(buttonChoice);
+    }
 }
