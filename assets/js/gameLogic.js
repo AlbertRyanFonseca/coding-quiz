@@ -28,6 +28,7 @@ function quizStart() {
     }, 1000);
     timeEl.textContent = time;
 
+    askQuestion();
 }
 
 function askQuestion() {
