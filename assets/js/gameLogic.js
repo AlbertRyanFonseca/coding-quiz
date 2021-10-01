@@ -48,8 +48,16 @@ function askQuestion() {
 function clickButton(choiceAnswered) {
     if (choiceAnswered.textContent != questions[questionIndex].answer) {
         time -= 5;
-
+        indicatorEl.textContent = "Incorrect";
     } else {
-
+        indicatorEl.textContent = "Correct";
     }
+
+    indicatorEl.setAttribute("class", "indicator");
+    setInterval(function () {
+        indicatorEl.setAttribute("class", "indicator hide__content");
+    }, 500);
+    questionIndex++;
+
+
 }
