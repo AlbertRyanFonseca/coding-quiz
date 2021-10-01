@@ -28,3 +28,12 @@ function quizStart() {
     timeEl.textContent = time;
 
 }
+
+function askQuestion() {
+    var currentQuestion = questions[questionIndex];
+    questionEl.children[0].textContent = currentQuestion.title;
+
+    while (choicesEl.hasChildNodes()) {
+        choicesEl.removeChild(choicesEl.lastChild);
+    }
+}
