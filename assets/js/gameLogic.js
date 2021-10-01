@@ -59,5 +59,10 @@ function clickButton(choiceAnswered) {
     }, 500);
     questionIndex++;
 
+    if (questionIndex === questions.length) {
+        // end the quiz
+    } else {
+        askQuestion();
+    }
 
 }
