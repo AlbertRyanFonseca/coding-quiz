@@ -43,3 +43,12 @@ function askQuestion() {
         choicesEl.appendChild(buttonChoice);
     }
 }
+
+function clickButton(choiceAnswered) {
+    if (choiceAnswered.textContent != questions[questionIndex].answer) {
+        time -= 5;
+
+    } else {
+
+    }
+}
