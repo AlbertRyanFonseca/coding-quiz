@@ -43,6 +43,19 @@ function askQuestion() {
         buttonChoice.textContent = currentQuestion.choices[i];
         choicesEl.appendChild(buttonChoice);
     }
+
+    choicesEl.children[0].addEventListener("click", function (event) {
+        clickButton(choicesEl.children[0]);
+    });
+    choicesEl.children[1].addEventListener("click", function (event) {
+        clickButton(choicesEl.children[1]);
+    });
+    choicesEl.children[2].addEventListener("click", function (event) {
+        clickButton(choicesEl.children[2]);
+    });
+    choicesEl.children[3].addEventListener("click", function (event) {
+        clickButton(choicesEl.children[3]);
+    });
 }
 
 function clickButton(choiceAnswered) {
