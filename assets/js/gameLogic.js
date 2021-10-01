@@ -2,6 +2,7 @@ var timeEl = document.getElementById("time");
 var questionEl = document.getElementById("questions");
 var choicesEl = document.getElementById("choices");
 var startBtn = document.getElementById("start-button");
+var indicatorEl = document.getElementById("indicator");
 
 var timerId;
 var questionIndex = 0;
